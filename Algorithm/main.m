@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#include <math.h>
+#include <stdio.h>
 void PRINTF_ARRAY (int *A,int n){
     for (int i = 0; i<n; i++) {
         printf("%d\n",A[i]);
@@ -103,6 +104,7 @@ void BUBBLESORT(int *A,int n){
                 int key = A[j];
                 A[j]=A[j-1];
                 A[j-1]=key;
+            
             }
         }
     }
